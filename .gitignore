@@ -1,0 +1,4 @@
+Thumbs.db
+/src/**/.vs/
+/src/**/bin/
+/src/**/obj/

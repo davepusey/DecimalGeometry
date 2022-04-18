@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <Authors>Dave Pusey</Authors>
+    <Company>Dave Pusey</Company>
+    <PackageProjectUrl>https://github.com/davepusey/DecimalGeometry</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/davepusey/DecimalGeometry</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Description>Uses 'decimal' internally, instead of 'double', to prevent floating-point errors.</Description>
+    <PackageId>DecimalGeometry</PackageId>
+    <Product>DecimalGeometry</Product>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.22108.1327</Version>
+  </PropertyGroup>
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="&quot;C:\Program Files (x86)\Dave Pusey\SetAssemblyProperties\SetAssemblyProperties.exe&quot; &quot;$(ProjectPath)&quot;" />
+  </Target>
+</Project>
